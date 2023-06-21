@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./result_yumi.html" method="get">
+        <fieldset>
+            <legend>만족도 설문지</legend>
+            <div>
+                <label for="name">이름: </label>
+                <input type="text" name="name" placeholder="이름을 입력해주세요." autocomplete="on" required>
+            </div>
+            <div>
+                <label for="age">나이:</label>
+                <input type="number" name="age" min="0" max="100" step="10" autocomplete="off">
+            </div>
+            <div>
+                <label for="address">주소:</label>
+                <input type="text" name="address" placeholder="주소를 입력해주세요." autocomplete="on" required>
+            </div>
+            
+            <label for="bigo">비고:</label>
+            <div>
+                <textarea name="bigo" rows="2" cols="30"></textarea>
+            </div>
+            <div>
+                <select name="type">
+                    <option value="0">이용한센터 선택</option>
+                    <option value="1">목동센터</option>
+                    <option value="2">강남센터</option>
+                </select>
+            </div>
+            <div>서비스 만족도 :
+                <input type="checkbox" name="type_2_1" value="1">
+                <label for="score1">1점</label>
+                <input type="checkbox" name="type_2_2" value="5">
+                <label for="score2">5점</label>
+                <input type="checkbox" name="type_2_3" value="10">
+                <label for="score3">10점</label>
+            </div>
+            <div> 이용한 제품
+                <input type="radio" name="phone" value="emergency">
+                <label for="product">휴대폰</label>
+                <input type="radio" name="type_3" value="normal">
+                <label for="electronics">가전제품</label>
+            </div>
+            <div>
+                <button type="submit">제출</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
